@@ -57,7 +57,6 @@ img {
   }
 }
 
-
 /*=====HEADER MOBILE STYLES=====*/
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -102,12 +101,178 @@ img {
     line-height: 0;
 }
 
-/*=====HEADER TABLET STYLES=====*/
+/*=====HEADER TABLET=====*/
+@media screen and (max-width: 767px) {
+
+}
+
+/*=====HEADER DESKTOP=====*/
 
 
-/*=====HEADER DESKTOP STYLES=====*/
+/*=====EFFECT SOLUTIONS MOBILE=====*/
+.main-solutions {
+    background-color: #2E2F42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/banner/dark-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 320px;
+    padding: 72px 0;
+    margin: 0 auto;
+}
 
+.solutions-title {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    max-width: 288px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    text-align: center;
+}
 
+.solutions-btn {
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.solutions-btn:hover,
+.solutions-btn:focus {
+    background-color: #404bbf;
+}
+
+/*=====EFFECT SOLUTIONS TABLET=====*/
+@media screen and (min-width: 768px) {
+    .main-solutions {
+        max-width: 768px;
+        padding: 112px 0;
+    }
+
+    .solutions-title {
+        font-size: 56px;
+        /* line-height: 1.07; */
+        max-width: 496px;
+        margin-bottom: 36px;
+        text-transform: none;
+    }
+
+    .solutions-title br {
+        display: none;
+    }
+}
+  
+/*=====EFFECT SOLUTIONS DESKTOP=====*/
+@media screen and (min-width: 1158px) {
+    .main-solutions {
+        max-width: 1440px;
+        padding: 188px 0;
+    }
+
+    .solutions-title {
+        margin-bottom: 48px;
+    }
+}
+
+/*=====BENEFITS MOBILE=====*/
+.main-benefits {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+}
+
+.benefits-item-icon {
+    display: none;
+}
+
+.benefits-subtitle {
+    color: #2E2F42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.benefits-text {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*=====BENEFITS TABLET=====*/
+@media screen and (min-width: 768px) {
+    .benefits-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    
+    .benefits-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
+
+/*=====BENEFITS DESKTOP=====*/
+@media screen and (min-width: 1158px) {
+    .main-benefits {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .benefits-item {
+        flex-basis: calc((100% - 3 * 24px) / 4);
+    }
+
+    .benefits-subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .benefits-text {
+        font-weight: 400;
+    }
+
+    .benefits-item-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        background-color: #F4F4FD;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+}
 /*=====MOBILE MENU=====*/
 .mobile-menu {
     position: fixed;
@@ -209,12 +374,6 @@ img {
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@media screen and (max-width: 767px) {
-    .container {
-      width: 320px;
-    }
-  }
 
 .visually-hidden {
     position: absolute;
