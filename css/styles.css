@@ -34,10 +34,13 @@ img {
     height: auto;
 }
 
-.container {
+@media screen and (min-width: 767px) {
+  .container {
+    width: 320px;
     padding: 0 16px;
     margin: 0 auto;
-}
+  }
+}   
 
 @media screen and (min-width: 768px) {
   .container {
