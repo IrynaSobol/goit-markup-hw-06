@@ -34,7 +34,7 @@ img {
     height: auto;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 320px;
     padding: 0 16px;
@@ -838,7 +838,6 @@ img {
     .footer-container {
         display: flex;
         align-items: baseline;
-        width: auto;
         gap: 0;
     }
 
