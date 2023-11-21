@@ -53,6 +53,7 @@ img {
 
 .header-nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -117,6 +118,7 @@ img {
 .header-address {
     font-style: normal;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-left: auto;
 }
